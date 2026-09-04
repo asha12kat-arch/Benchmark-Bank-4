@@ -90,7 +90,7 @@ export default function HomeScreen({ navigate }: Props) {
             <div className="content-stretch flex items-start justify-between relative shrink-0 w-full">
               <div className="content-stretch flex flex-col gap-[2px] items-start relative shrink-0">
                 <p className="font-['Geist:Regular',sans-serif] font-normal relative shrink-0 text-[#94a3b8] text-[13px]">Checking (•••4501)</p>
-                <p className="font-['Geist:SemiBold',sans-serif] font-semibold relative shrink-0 text-[15px] text-white">{balanceVisible ? "$12,450.00" : "••••••"}</p>
+                <p className="font-['Geist:SemiBold',sans-serif] font-semibold relative shrink-0 text-[15px] text-white">{balanceVisible ? "$1,000,000.00" : "••••••"}</p>
               </div>
               
             </div>
