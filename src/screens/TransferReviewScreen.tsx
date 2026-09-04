@@ -95,9 +95,10 @@ export default function TransferReviewScreen({ navigate, data }: Props) {
           </div>
 
           {!hasSufficientFunds && (
-            <div role="alert" className="bg-[rgba(248,113,113,0.08)] p-[14px] relative rounded-[14px] shrink-0 w-full" style={{border: "1px solid rgba(248,113,113,0.3)"}}>
-              <p className="font-['Geist:Medium',sans-serif] text-[13px] text-[#f87171]">Insufficient funds. This transfer exceeds the $1,000,000.00 transfer limit and cannot be completed.</p>
-          )}
+  <div role="alert" className="bg-[rgba(248,113,113,0.08)] p-[14px] relative rounded-[14px] shrink-0 w-full" style={{border: "1px solid rgba(248,113,113,0.3)"}}>
+    <p className="font-['Geist:Medium',sans-serif] text-[13px] text-[#f87171]">Insufficient funds. This transfer exceeds the $1,000,000.00 transfer limit and cannot be completed.</p>
+  </div>
+)}
 
           {transferUnavailable && (
             <div role="alert" className="bg-[rgba(248,113,113,0.08)] p-[14px] relative rounded-[14px] shrink-0 w-full" style={{border: "1px solid rgba(248,113,113,0.3)"}}>
@@ -112,7 +113,7 @@ export default function TransferReviewScreen({ navigate, data }: Props) {
               <path d="M8 2L13 4.5V8C13 11 10.5 13.5 8 14C5.5 13.5 3 11 3 8V4.5L8 2Z" stroke="#8B1A2B" strokeWidth="1.5" />
               <path d="M6 8L7.5 9.5L10 7" stroke="#8B1A2B" strokeLinecap="round" strokeWidth="1.5" />
             </svg>
-            <p className="font-['Geist:Regular',sans-serif] font-normal leading-[1.4] relativ min-w-0 flex-1 text-[#94a3b8] text-[12px]">This transfer is protected by Benchmark Bank security protocols.</p>
+            <p className="font-['Geist:Regular',sans-serif] font-normal leading-[1.4] relative min-w-0 flex-1 text-[#94a3b8] text-[12px]">This transfer is protected by Benchmark Bank security protocols.</p>
           </div>
 
           {/* Confirm Button */}
