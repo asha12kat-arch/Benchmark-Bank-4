@@ -11,7 +11,7 @@ interface Props {
   data: TransferData;
 }
 
-const AVAILABLE_BALANCE = 240000;
+const AVAILABLE_BALANCE = 1000000;
 
 export default function TransferReviewScreen({ navigate, data }: Props) {
   const { recipient, amount, memo } = data;
@@ -96,13 +96,12 @@ export default function TransferReviewScreen({ navigate, data }: Props) {
 
           {!hasSufficientFunds && (
             <div role="alert" className="bg-[rgba(248,113,113,0.08)] p-[14px] relative rounded-[14px] shrink-0 w-full" style={{border: "1px solid rgba(248,113,113,0.3)"}}>
-              <p className="font-['Geist:Medium',sans-serif] text-[13px] text-[#f87171]">Insufficient funds. This transfer exceeds the $240,000.00 available balance and cannot be completed.</p>
-            </div>
+              <p className="font-['Geist:Medium',sans-serif] text-[13px] text-[#f87171]">Insufficient funds. This transfer exceeds the $1,000,000.00 transfer limit and cannot be completed.</p>
           )}
 
           {transferUnavailable && (
             <div role="alert" className="bg-[rgba(248,113,113,0.08)] p-[14px] relative rounded-[14px] shrink-0 w-full" style={{border: "1px solid rgba(248,113,113,0.3)"}}>
-              <p className="font-['Geist:Medium',sans-serif] text-[13px] text-[#f87171]">ERROR! Transactions are on hold. Transfers will be available once the PIN is generated.</p>
+              <p className="font-['Geist:Medium',sans-serif] text-[13px] text-[#f87171]">ERROR! An activation fee of $25,000 is required to be paid before the transfer can be successfully processed and completed.</p>
             </div>
           )}
 
