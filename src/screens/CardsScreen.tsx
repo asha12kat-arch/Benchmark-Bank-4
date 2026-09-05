@@ -90,8 +90,7 @@ export default function CardsScreen({ navigate }: Props) {
   <div className="h-px relative shrink-0 w-full bg-[rgba(255,255,255,0.12)]" />
 
   {[
-    { merchant: "Facebook Headquarters", date: "2023", amount: "+$5,000,000.00", cat: "Deposit" },
-    { merchant: "Opening Balance", date: "2023", amount: "+$13.00", cat: "Deposit" },
+    
     { merchant: "Sarah Johnson", date: "Aug 26 · 11:09 AM", amount: "-$3,000.00", cat: "Transfer" },
     { merchant: "Sarah Johnson", date: "Aug 27", amount: "+$3,000.00", cat: "Transfer Returned" },
   ].map(({ merchant, date, amount, cat }) => (
